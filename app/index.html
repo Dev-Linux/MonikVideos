@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MonikVideos</title>
+    <link href="./icons/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<div class="content">
+    <head>
+        <h1 class="video-title">video de test.mp4</h1>
+    </head>
+
+    <video class="video-play" autoplay crossorigin="anonymous"></video>
+
+    <i class="fa fa-pause-circle-o btn-player" aria-hidden="true"></i>
+
+    <div class="area-control">
+        <div class="video-progress-thumbs">
+            <div class="area-thumbs">
+                <img id="thumbs">
+                <span id="area-thumbs-tri"></span>
+            </div>
+        </div>
+        <div class="video-progress">
+            <span class="progress-bar"></span>
+        </div>
+        <span class="video-start">00:00:00</span>
+        <span class="video-duration">00:00:00</span>
+        <input class="btn-volume" type="range" min="0" max="1" step="0.1" start="0.5">
+    </div>
+</div>
+
+<script src="./js/init.js"></script>
+</body>
+</html>

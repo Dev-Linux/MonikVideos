@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=video;media;audio;Web;
+Name=monikvideos
+Comment=app ibrid
+Icon=/home/shenoisz/Documents/estudos/node js/electron-project/hello/applications/electron.svg
+Exec="/home/shenoisz/Documents/estudos/node js/electron-project/video/node_modules/.bin/electron" "/home/shenoisz/Documents/estudos/node js/electron-project/video/main.js" %U
+Terminal=false
+Type=Application
+StartupNotify=true

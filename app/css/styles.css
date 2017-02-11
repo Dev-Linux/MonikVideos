@@ -1,0 +1,173 @@
+
+html {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-app-region: no-drag;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    cursor: default;
+}
+
+.video-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 100%;
+    font-family: ubuntu;
+    color: #fff;
+    top: 10px;
+    overflow: hidden;
+    opacity: 0.60;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.video-play {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 380px;
+    background: #000;
+    opacity: 100.0;
+}
+
+video::-webkit-media-controls {
+  display:none;
+}
+
+.area-thumbs {
+    position: relative;
+    left: -999px;
+    bottom: 143px;
+    width: 180px;
+    height: 120px;
+    background: rgba(255, 255, 255, .40);
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 0.0;
+    z-index: 999;
+}
+
+#thumbs {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+}
+
+#area-thumbs-tri {
+    position: absolute;
+    top: 130px;
+    left: 85px;
+    z-index: 998;
+    border-top: 10px solid rgba(255, 255, 255, .40);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.btn-player {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+}
+
+.area-control {
+    position: absolute;
+    opacity: 0.0;
+    z-index: 2;
+}
+
+.video-progress {
+    position: absolute;
+    width: 80%;
+    height: 6%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: rgba(255, 255, 255, .40);
+    top: 30%;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.video-progress-thumbs {
+    position: absolute;
+    width: 80%;
+    height: 6%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: rgba(255, 255, 255, .0);
+    top: 30%;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.video-start {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    font-size: 80%;
+    font-family: ubuntu;
+    color: #fff;
+    opacity: .40;
+}
+
+.video-duration {
+    position: absolute;
+    top: 40%;
+    right: 7%;
+    font-size: 80%;
+    font-family: ubuntu;
+    color: #fff;
+    opacity: .40;
+}
+
+.progress-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: #00ff00;
+    border-radius: 3px 0 0 3px;
+}
+
+.btn-volume {
+    -webkit-appearance: none;
+    outline: none;
+    position: absolute;
+    width: 75px;
+    height: 3px;
+    top: 60%;
+    right: 10%;
+    background: #fff;
+    opacity: .40;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-volume:focus {
+    outline: none;
+}
+
+.btn-volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background: #fff;
+}
